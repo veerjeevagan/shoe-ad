@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Condensed' , sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    transform-style: preserve-3d;
+    width: 25rem;
+    min-height: 80vh;
+    border-radius: 60px;
+    box-shadow: 0px 10px 10px rgb(48, 48, 48 , 0.3) , 0px 0px 50px rgb(41, 41, 41 , 0.5);
+    
+}
+
+.sneaker {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.parallelogram {
+    background: linear-gradient(to right , rgb(172, 44, 223) , rgb(121, 29, 158));
+    height: 12rem;
+    width: 14rem;
+    position: absolute;
+    transform: skew(30deg);
+    z-index: 1;
+
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    color: rgb(59, 59, 59);
+    padding: 1rem 0rem;
+    text-align: center;
+    transition:all 0.5s ease-out;
+}
+
+.shoeName{
+    font-weight: bolder;
+    text-align: center;
+    transition: all 0.5s ease-out;
+
+}
+
+.sneaker img {
+
+    width: 32rem;
+    z-index: 2;
+    transition: all 0.5s ease-out;
+
+}
+
+.size-info{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0 ;
+    transition:all 0.5s ease-out;
+
+}
+
+.size-info button {
+    padding: .4rem 1rem;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgb(61, 61, 61 , 0.50);
+    background-color: white;
+    cursor: pointer;
+    
+
+}
+
+.active {
+    background-color: rgb(248, 134, 59) !important;
+    color: white;
+}
+
+
+
+.purchase{
+    margin: 2rem;
+    transition:all 0.5s ease-out;
+    font-weight: bolder;
+    color:white;
+    background-color:rgb(255, 164, 103);
+    padding: 1.2rem 5rem;
+    border-radius: 30px;
+    cursor: pointer;
+
+
+}
+
+@media only screen and (max-width:625px){
+    .container{
+        width: 100%;
+    }
+
+    .card{
+        
+        box-shadow: none
+    
+    }
+
+    .sneaker{
+    }
+
+
+}
